@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile_instagram/widgets/count_widget.dart';
+import 'package:profile_instagram/widgets/custom_button_Widget.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -111,8 +112,49 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            
             Container(
+              child: Column(
+                children: [
+                  CustomButtonWidget(
+                    label: "Edit Profile",
+                    margin: 20,
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: CustomButtonWidget(
+                            label: "Promotions",
+                            margin: 0,
+                          ),
+                        ),
+                        SizedBox(width: 5),
+                        Expanded(
+                          child: CustomButtonWidget(
+                            label: "Insights",
+                            margin: 0,
+                          ),
+                        ),
+                        SizedBox(width: 5),
+                        Expanded(
+                          child: CustomButtonWidget(
+                            label: "Contact",
+                            margin: 0,
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                left: 20,
+                top: 5,
+              ),
               height: 100,
               child: ListView(
                 shrinkWrap: true,
@@ -121,45 +163,76 @@ class _ProfilePageState extends State<ProfilePage> {
                   CircleAvatar(
                     // radius: 40,
                     minRadius: 30,
-                    maxRadius: 40,
+                    maxRadius: 35,
                     child: Text("CODE\nFIRST"),
                   ),
+                  SizedBox(width: 20),
                   CircleAvatar(
                     // radius: 40,
                     minRadius: 30,
-                    maxRadius: 40,
+                    maxRadius: 35,
                     child: Text("CODE\nFIRST"),
                   ),
+                  SizedBox(width: 20),
                   CircleAvatar(
                     // radius: 40,
                     minRadius: 30,
-                    maxRadius: 40,
+                    maxRadius: 35,
                     child: Text("CODE\nFIRST"),
                   ),
+                  SizedBox(width: 20),
                   CircleAvatar(
                     // radius: 40,
                     minRadius: 30,
-                    maxRadius: 40,
+                    maxRadius: 35,
                     child: Text("CODE\nFIRST"),
                   ),
+                  SizedBox(width: 20),
                   CircleAvatar(
                     // radius: 40,
                     minRadius: 30,
-                    maxRadius: 40,
+                    maxRadius: 35,
                     child: Text("CODE\nFIRST"),
                   ),
+                  SizedBox(width: 20),
                   CircleAvatar(
                     // radius: 40,
                     minRadius: 30,
-                    maxRadius: 40,
+                    maxRadius: 35,
                     child: Text("CODE\nFIRST"),
                   ),
+                  SizedBox(width: 20),
                   CircleAvatar(
                     // radius: 40,
                     minRadius: 30,
-                    maxRadius: 40,
+                    maxRadius: 35,
                     child: Text("CODE\nFIRST"),
                   ),
+                  SizedBox(width: 20),
+                ],
+              ),
+            ),
+            Container(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            width: 1,
+                          ),
+                        ),
+                      ),
+                      child: Icon(Icons.grid_on),
+                    ),
+                  ),
+                  Expanded(
+                      child: Icon(
+                    Icons.assignment_ind_outlined,
+                    color: Color(0xffababab),
+                  )),
                 ],
               ),
             )
