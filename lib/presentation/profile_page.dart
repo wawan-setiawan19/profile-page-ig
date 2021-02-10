@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:profile_instagram/widgets/count_widget.dart';
 import 'package:profile_instagram/widgets/custom_button_Widget.dart';
+import 'package:profile_instagram/widgets/story_widget.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -62,7 +63,7 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.only(top: 20),
+              margin: EdgeInsets.only(top: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -88,7 +89,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(20),
+              margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               padding: EdgeInsets.only(right: 20),
               width: double.infinity,
               child: Column(
@@ -160,54 +161,15 @@ class _ProfilePageState extends State<ProfilePage> {
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 children: [
-                  CircleAvatar(
-                    // radius: 40,
-                    minRadius: 30,
-                    maxRadius: 35,
-                    child: Text("CODE\nFIRST"),
-                  ),
+                  StoryWidget(label: 'Code\nFirst'),
                   SizedBox(width: 20),
-                  CircleAvatar(
-                    // radius: 40,
-                    minRadius: 30,
-                    maxRadius: 35,
-                    child: Text("CODE\nFIRST"),
-                  ),
+                  StoryWidget(label: 'Code\nFirst'),
                   SizedBox(width: 20),
-                  CircleAvatar(
-                    // radius: 40,
-                    minRadius: 30,
-                    maxRadius: 35,
-                    child: Text("CODE\nFIRST"),
-                  ),
+                  StoryWidget(label: 'Code\nFirst'),
                   SizedBox(width: 20),
-                  CircleAvatar(
-                    // radius: 40,
-                    minRadius: 30,
-                    maxRadius: 35,
-                    child: Text("CODE\nFIRST"),
-                  ),
+                  StoryWidget(label: 'Code\nFirst'),
                   SizedBox(width: 20),
-                  CircleAvatar(
-                    // radius: 40,
-                    minRadius: 30,
-                    maxRadius: 35,
-                    child: Text("CODE\nFIRST"),
-                  ),
-                  SizedBox(width: 20),
-                  CircleAvatar(
-                    // radius: 40,
-                    minRadius: 30,
-                    maxRadius: 35,
-                    child: Text("CODE\nFIRST"),
-                  ),
-                  SizedBox(width: 20),
-                  CircleAvatar(
-                    // radius: 40,
-                    minRadius: 30,
-                    maxRadius: 35,
-                    child: Text("CODE\nFIRST"),
-                  ),
+                  StoryWidget(label: 'Code\nFirst'),
                   SizedBox(width: 20),
                 ],
               ),
@@ -233,6 +195,30 @@ class _ProfilePageState extends State<ProfilePage> {
                     Icons.assignment_ind_outlined,
                     color: Color(0xffababab),
                   )),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 3),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Container(
+                    height: 135,
+                    width: 135,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 135,
+                    width: 135,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 135,
+                    width: 135,
+                    color: Colors.green,
+                  ),
                 ],
               ),
             )
